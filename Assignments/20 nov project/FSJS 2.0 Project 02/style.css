@@ -1,0 +1,92 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+section[aria-label="navbar"]{
+    background-color: black;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% 5%;
+}
+
+.logo{
+    width: 7vw;
+}
+
+.line{
+    background-color: #fff;
+    height:50px;
+    width: 2px;
+    margin-left: -25%;
+}
+
+.grow-list{
+    margin-left: -25%;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 50px;
+}
+
+.list .list-item:first-child::after{
+    display: contents;
+    content: " ^";
+}
+
+.button-small{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FD297A;
+    color:#fff;
+    font-weight:600;
+    font-family: 'Montserrat';
+}
+
+section[aria-label="hero"]{
+    background-image: url(./assets/bg.png);
+    height: 140vh;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.hero{
+    text-align: center;
+    margin: 10% 18%;
+}
+
+.hero-heading{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.hero-description{
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.button-large{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    color:#fff;
+    background-color: #FD297A;
+    margin-top: 5%;
+    font-size: 16px;
+    font-weight: 600;
+}

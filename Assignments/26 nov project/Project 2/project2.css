@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #F0F4F5;
+}
+
+.container{
+    margin-left: 5%;
+    margin-top: 2%;
+    max-width: 1400px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img[alt="Logo Image"]{
+    width:12%;
+    align-self: center;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -10%;
+    gap: 50px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.list li:first-child a{
+    color: #20BC7E;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #080808fc;
+}
+
+section[name = "main"]{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-image: url("./images/stethoscope.png");
+    background-repeat: no-repeat;
+    background-size: fill; */
+}
+
+.left h1{
+    font-size: 70px;
+    line-height: 100px;
+    width: 45vw;
+    color: #000000;
+    font-weight: 900;
+}
+
+.left p{
+    margin-top: 3%;
+    font-size: 18px;
+    color: #827E7C;
+}
+
+.left img[alt = "yellow angle"]{
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.left .button{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 700;
+    color:#ffffff;
+    background-color: #20BC7E;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 5%;
+}
+
+.left img[alt="mouse icon"]{
+    margin-left: 100%;
+    margin-top: -5%;
+}
+
+.left img[ alt="stethoscope img"]{
+    z-index: -1;
+    width: 45%;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.right img[alt="green circle"]{
+    width: 65%;
+    margin-left: 30%;
+    margin-top: 5%;
+    z-index:-1;
+}
+.right img[alt="yellow circle"]{
+    width: 60%;
+    margin-left: 40%;
+    margin-top: -150%;
+    
+    z-index: 0;
+}
+.right img[alt="doctor img"]{
+    width: 65%;
+    margin-left: 30%;
+    margin-top: -83%;
+    z-index: 2;
+}
